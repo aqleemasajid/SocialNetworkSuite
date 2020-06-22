@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+
+    form(action="" method="POST" enctype="multipart/form-data")
+        label(for="image_name") Name of Image:
+        input#image_name.form-control(type="text" placeholder="Name of image" name="image_name" required="true")
+        input(type="file" name="image")
+        button(type='submit') Submit
